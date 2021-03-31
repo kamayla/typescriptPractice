@@ -11,4 +11,9 @@ console.log(a);
 console.log(a);
 console.log(a);
 console.log(a);
+function aaaaa() {
+  return 'aaaaa';
+}
+
+console.log(aaaaa());
 world.sayHello(root);
