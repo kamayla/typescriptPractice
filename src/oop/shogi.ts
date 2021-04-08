@@ -26,7 +26,6 @@ abstract class Piece {
   constructor(private readonly player: Player, suji: Suji, dan: Dan) {
     this.position = new Position(suji, dan);
   }
-
   moveTo(position: Position) {
     this.position = position;
   }
@@ -42,7 +41,12 @@ class Osho extends Piece {
 
 class Game {
   private pieces = Game.makePieces();
-  private static makePieces() {
+  public static makePieces() {
     return [new Osho('first', 5, '1'), new Osho('second', 5, '9')];
   }
+  get aaaa() {
+    return 'getter';
+  }
 }
+
+export default Game;
